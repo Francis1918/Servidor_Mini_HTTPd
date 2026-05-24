@@ -128,4 +128,4 @@ El servidor sigue un modelo **event-driven** de un solo hilo:
 
 ## Autor
 
-Bravo - Proyecto Integrador MiniHTTPd.
+Bravo Francis - Proyecto Integrador MiniHTTPd.
