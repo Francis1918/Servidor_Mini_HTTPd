@@ -24,7 +24,6 @@ Proyecto integrador de Computacion Distribuida
 - `GNU make`.
 
 ## Estructura del proyecto
-## Estructura del proyecto
 
 ```text
 minihttpd/
@@ -46,6 +45,25 @@ minihttpd/
    ├── style.css
    └── image.png
 ```
+
+## Descripción de archivos
+
+- `Makefile`: Reglas de compilación (`make`, `make clean`) y targets para construir el proyecto.
+- `README.md`: Documentación del proyecto (este archivo).
+- `include/`:
+   - `http.h`: Declaraciones para el parseo y representación de solicitudes/respuestas HTTP.
+   - `server.h`: Prototipos y estructuras relacionadas con el bucle de eventos y la gestión de conexiones.
+   - `mime.h`: Declaraciones para detección y mapeo de tipos MIME.
+   - `files.h`: Interfaces para resolver rutas y servir archivos estáticos.
+- `src/`:
+   - `main.c`: Punto de entrada; inicializa la configuración y arranca el servidor.
+   - `server.c`: Manejo de sockets, `epoll`, aceptación de clientes y gestión del bucle principal.
+   - `http.c`: Parsing de la línea de solicitud y cabeceras, y construcción de respuestas básicas.
+   - `mime.c`: Determina el tipo MIME de un archivo por su extensión.
+   - `files.c`: Resuelve rutas con `realpath()`, valida acceso dentro de `www/` y envía el contenido al cliente.
+- `www/`:
+   - `index.html`, `style.css`, `image.png`: Ejemplos de contenido estático servible por el servidor.
+
 ## Compilacion
 
 Desde la raiz del proyecto:
