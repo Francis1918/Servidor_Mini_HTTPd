@@ -24,6 +24,9 @@ Proyecto integrador de Computacion Distribuida
 - `GNU make`.
 
 ## Estructura del proyecto
+## Estructura del proyecto
+
+```text
 minihttpd/
 ├── Makefile
 ├── README.md
@@ -39,9 +42,10 @@ minihttpd/
 │   ├── mime.c
 │   └── files.c
 └── www/
-├── index.html
-├── style.css
-└── image.png
+   ├── index.html
+   ├── style.css
+   └── image.png
+```
 ## Compilacion
 
 Desde la raiz del proyecto:
