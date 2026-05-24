@@ -1,0 +1,27 @@
+# Archivos compilados
+build/
+*.o 
+*.a
+*.so
+
+# Binario final
+minihttpd
+
+# Archivos temporales del editor
+*.swp
+*.swo
+*~
+.vscode/
+*.save
+*.log
+
+# Archivos generados por sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Archivos de respaldo de nano
+*.bak
+
+# Coredumps
+core
+core.*

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MiniHTTPd - Pagina de prueba</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>MiniHTTPd</h1>
+        <p class="subtitle">Servidor HTTP/1.1 minimo escrito en C</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Funcionando correctamente</h2>
+            <p>Si ves esta pagina con estilos aplicados y la imagen
+               cargada, significa que el servidor esta sirviendo
+               correctamente archivos HTML, CSS e imagenes con sus
+               tipos MIME apropiados.</p>
+        </section>
+
+        <section class="card">
+            <h2>Caracteristicas implementadas</h2>
+            <ul>
+                <li>Bucle de eventos con <code>epoll()</code></li>
+                <li>Parsing de solicitudes HTTP/1.1</li>
+                <li>Generacion de respuestas con codigos de estado</li>
+                <li>Tipos MIME segun extension</li>
+                <li>Servir archivos estaticos del directorio <code>www/</code></li>
+                <li>Proteccion contra buffer overflows</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Imagen de prueba</h2>
+            <img src="/image.png" alt="Imagen servida por MiniHTTPd"
+                 width="200" height="200">
+        </section>
+    </main>
+
+    <footer>
+        <p>MiniHTTPd - Proyecto Integrador</p>
+    </footer>
+</body>
+</html>
